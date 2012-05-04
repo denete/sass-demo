@@ -1,0 +1,3 @@
+From within the media/css directory:
+	sass --watch scss:. -r morefunctions.rb
+	sass --watch scss:. -r morefunctions.rb --style compressed
