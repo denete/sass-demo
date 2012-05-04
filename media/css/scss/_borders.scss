@@ -1,0 +1,10 @@
+/* _borders.scss */
+/* scss partial */
+
+@mixin border($size: 1px, $style: solid, $color: #000) {
+    border: {
+        color: $color;
+        width: $size;
+        style: $style;
+    }
+}

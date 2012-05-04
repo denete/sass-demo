@@ -1,0 +1,43 @@
+/* style.scss */
+
+@import "rounded";
+@import "colors";
+@import "borders";
+
+/* variables */
+$my-reversed-catstack: reverse("reversed stack of cats");
+
+$my-random-color: rand_color();
+
+
+#reverseDiv{
+	@include border($color:$my-random-color);
+	background-color: rand_color();
+	color:#fff;
+	padding:10px;
+}
+
+#reverseDiv:after{
+	content: "#{$my-reversed-catstack}";
+}
+
+#main{
+	@include bg-solid(#999);
+    @include rounded-all(20px);
+    padding:20px;
+}
+
+#footer{
+    @include rounded-all(15px);
+    @include bg-solid(#ccc);
+    @include border($style:dashed,$size:2px,$color:#f00);
+    padding:10px;
+}
+
+/* empty defs aren't rendered */
+#sidebar{
+}
+
+div{
+	margin-bottom:10px
+}

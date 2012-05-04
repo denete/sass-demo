@@ -1,0 +1,6 @@
+/* _colors.scss */
+/* scss partial */
+
+@mixin bg-solid($color: #ffffff) {
+    background-color: $color;
+}
